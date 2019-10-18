@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const newFormItem = document.querySelector('#new-form-item');
   newFormItem.addEventListener('submit', handleNewFormItemSubmit);
+
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const handleNewFormItemSubmit = function (event) {
@@ -30,6 +33,9 @@ const createAlbumItem = function (form) {
   albumItem.appendChild(genre);
 
   return albumItem;
+}
 
-
+const handleDeleteAllClick = function (event) {
+  const readingList = document.querySelector('#album-list');
+  readingList.innerHTML = '';
 }
