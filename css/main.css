@@ -10,3 +10,12 @@ form {
 input {
   border-radius: 1000px;
 }
+
+body {
+  background-color: yellow;
+  text-align: center;
+}
+
+#delete-all {
+  text-align: center;
+}

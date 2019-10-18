@@ -32,6 +32,10 @@ const createAlbumItem = function (form) {
   genre.textContent = form.genre.value;
   albumItem.appendChild(genre);
 
+  const release = document.createElement('h4');
+  release.textContent = form.release.value;
+  albumItem.appendChild(release);
+
   return albumItem;
 }
 

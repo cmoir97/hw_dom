@@ -25,14 +25,27 @@
             <input type="text" id="genre" required/>
           </div>
 
+          <p>Select a release type:</p>
+
+          <div>
+            <input type="radio" id="label" name="release" value="Major Label"
+             checked>
+             <label for="label">Major Label</label>
+           </div>
+
+           <div>
+             <input type="radio" id="indie" name="release" value="Independently Released">
+             <label for="indie">Independently Released</label>
+           </div>
+           <br>
           <div class="form-item">
             <label for="year" class="primary">Year Released</label>
             <input type="text" id="year" required/>
           </div>
         </div>
+        <br>
         <input type="submit" value="save"/>
       </form>
-
       <button id="delete-all">Delete All</button>
 
       <h1>Album List</h1>
