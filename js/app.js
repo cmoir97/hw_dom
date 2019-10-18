@@ -16,4 +16,20 @@ const handleNewFormItemSubmit = function (event) {
 const createAlbumItem = function (form) {
   const albumItem = document.createElement('div');
   albumItem.classList.add('album-list-item');
+
+  const title = document.createElement('h2');
+  title.textContent = form.title.value;
+  albumItem.appendChild(title);
+
+  const artist = document.createElement('h3');
+  artist.textContent = form.artist.value;
+  albumItem.appendChild(artist);
+
+  const genre = document.createElement('h4');
+  genre.textContent = form.genre.value;
+  albumItem.appendChild(genre);
+
+  return albumItem;
+
+
 }
