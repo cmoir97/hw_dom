@@ -3,10 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Favourite Albums</title>
-    <link rel="stylesheet" href="text/css" media="screen" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
     <script src="js/app.js"></script>
   </head>
   <body>
+    <form id="new-form-item">
+        <div id="form-wrapper">
+          <div class="form-item">
+            <label for="title" class="primary">Title</label>
+            <input type="text" id="title" required/>
+          </div>
 
+          <div class="form-item">
+            <label for="artist" class="primary">Artist</label>
+            <input type="text" id="artist" required/>
+          </div>
+
+          <div class="form-item">
+            <label for="genre" class="primary">Genre</label>
+            <input type="text" id="Genre" required/>
+          </div>
+
+          <div class="form-item">
+            <label for="year" class="primary">Year Released</label>
+            <input type="text" id="year" required/>
+          </div>
+        </div>
+        <input type="submit" value="save"/>
+      </form>
+
+      <h1>Album List</h1>
+      <div id="album-list">
+
+      </div>
   </body>
 </html>
