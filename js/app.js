@@ -10,5 +10,10 @@ const handleNewFormItemSubmit = function (event) {
   const albumList = document.querySelector('#album-list');
   albumList.appendChild(albumItem);
 
-  event.target.reset(); 
+  event.target.reset();
+}
+
+const createAlbumItem = function (form) {
+  const albumItem = document.createElement('div');
+  albumItem.classList.add('album-list-item');
 }
